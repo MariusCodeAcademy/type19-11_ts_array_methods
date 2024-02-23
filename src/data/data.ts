@@ -1,8 +1,17 @@
 // aprasyti tipa sutudents masyvui
+export type StudType = {
+  name: string;
+  gender: 'male' | 'female';
+  age: number;
+  town: string;
+  hasCar: boolean;
+};
+
+export type StudArr = StudType[];
 
 // exportuoti students
 
-const students = [
+export const students: StudArr = [
   {
     name: 'James',
     gender: 'male',
